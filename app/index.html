@@ -31,9 +31,10 @@
           <div class="collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               <li><a ng-href="#/about">About</a></li>
               <li><a ng-href="#/">Contact</a></li>
+              <li><a ng-href="#/"><a href="https://github.com/">More information</a></li>
             </ul>
           </div>
         </div>
@@ -68,23 +69,35 @@
                </div>
     </div>
         
-          <div class="container">
+    <div class="container">
         <div ng-view="">
          <a id="animal1">CHIEN !!!</a>
          <a id="animal2">CHAT !!!</a>
         
         <br>
-        
-        <img src="images/images1/image1.jpg">
-        <img src="images/images1/image2.jpg">
-        <img src="images/images1/image3.jpg">
-            
+        <div id="animaux">
+            <img src="images/images1/image1.jpg">
+            <img src="images/images1/image2.jpg">
+            <img src="images/images1/image3.jpg">
+        </div>  
 
 
             
         </div>
     </div>
+    
+    <div class="container">
+        <div ng-view="">
+           <p>connaitre les dimensions des bloc avec jquery</p>
+            <div id="parent">Texte dans le parent
+                <div id="enfant">Texte dans l'enfant</div>
+            </div>
+            <br>
+            <span id="resultat"></span>
+        </div>
+    </div>
 
+   
     <div class="footer">
       <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>

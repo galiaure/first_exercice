@@ -2,6 +2,7 @@ $(function() {
   $('#texteJQ').html('Hello world. Ce texte est affiché par jQuery.');
 });
 
+/* --------------- */
 /* fonction de modification des textes */
 
 $(function() {
@@ -14,6 +15,7 @@ $('p:even').css('color','red');
 
 
 
+/* --------------- */
 
 var chat_chien = document.getElementById("animal1");
 
@@ -25,6 +27,7 @@ chat_chien.onclick =
         });  
     }); 
     
+/* --------------- */
 
 var chien_chat = document.getElementById("animal2");
 
@@ -36,3 +39,32 @@ chien_chat.onclick =
         });  
     }); 
     
+/* --------------- */
+
+/* Auto attribut lien blank et set */
+
+$('a').attr('target', function() {
+  if(this.host == location.host) return '_self'
+  else return '_blank'
+});
+
+/* --------------- */
+
+/* ajout d'une classe pour les images animaux */
+$(function() {
+$('#animaux img').addClass('img_dimension');
+});
+
+/* --------------- */
+
+
+/* connaitre les dimensions des bloc avec jquery */
+
+var posparent = $('#parent').position();
+var posenfant = $('#enfant').position();
+
+$('#resultat').text('Parent : x=' + posparent.left + ', y=' + posparent.top + ' Enfant : x=' + posenfant.left + ', y=' + posenfant.top);
+                   
+
+
+
