@@ -42,13 +42,84 @@
 
     <div class="container">
         <div ng-view="">
-            <h1>Entrainement JQuery</h1>
-            <ul>
-                <li><a href="exercice_jquery1.html">Exercice 1</a></li>
-                <li><a href="tp_questionnaire.html">Questionnaire interractif JQuery</a></li>
+            <h1>Gestion du css en passant par Jquery</h1>
+            <span id="texteJQ"></span
+            <ul id="ul1">
+                <li> Elément de liste 1
+                  <ul id="ul2">
+                    <li class="lettre"> Enfant 1</li>
+                    <li class="lettre"> Enfant 2</li>
+                  </ul>
+                </li>
+                <li class="liste"> Elément de liste 2</li>
+                <li class="liste"> Elément de liste 3</li>
+                <li class="liste"> Elément de liste 4</li>
             </ul>
+               </div>
+    </div>
+        
+    <div class="container">
+        <div ng-view="">
+        <h1>Listing images dont les sources sont dans deux dossiers séparé géré par jquery</h1>
+         <a id="animal1">CHIEN !!!</a>
+         <a id="animal2">CHAT !!!</a>
+        
+        <br>
+        <div id="animaux">
+            <img src="images/images1/image1.jpg">
+            <img src="images/images1/image2.jpg">
+            <img src="images/images1/image3.jpg">
+        </div>  
+
+
             
+        </div>
+    </div>
+    
+    <div class="container">
+        <div ng-view="">
+           <h1>connaitre la position des blocs et leur dimensions avec jquery</h1>
+            <div id="parent">Texte dans le parent
+                <div id="enfant">Texte dans l'enfant</div>
+            </div>
+            <br>
+            <span id="resultat"></span>
+            <br>
+            <span id="resultat2"></span>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div ng-view="">
+            <h1>Associer des données avec des balises</h1>
+            <div id="mondiv"> Les valeurs stockées dans la balise &ltdiv&gt ; sont : 
+            <span id="sp1"></span>, <span id="sp2"></span> et <span id="sp3"></span>.
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div ng-view="">
             
+            <h1>Insérer et remplacer des éléments dans le DOM</h1>
+            <h2>Lorem ipsum</h2>
+
+            <p id="un">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <hr>
+            <h2>Lorem ipsum suite</h2>
+            <p id="deux">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <hr>
+             <h2>Liste à puces</h2>
+
+            <ul id="trois">
+              <li>Premier élément</li>
+              <li>Deuxième élément</li>
+              <li>Troisième élément</li>
+              <li>Quatrième élément</li>
+            </ul>    
+      
         </div>
     </div>   
     
@@ -86,6 +157,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/jq-hello-world.js"></script>
         <!-- endbuild -->
 
 </body>

@@ -138,3 +138,8 @@ a:hover {
     left: 100px;
     background-color: lightcoral;
 }
+
+ul li {
+    text-decoration: none;
+    font-style: none;
+}
