@@ -35,3 +35,8 @@ $('#reponse-global').hover(
     $('.question img').attr('src','images/question.png');  
   }
 );
+
+// MODIFICATION DU CSS
+
+$('.question').css({"background-color":"#F5F0F6","padding":"10px","margin-top":"20px","border":"solid 1px"});
+$('.question img').css();
