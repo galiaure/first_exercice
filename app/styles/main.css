@@ -143,3 +143,18 @@ ul li {
     text-decoration: none;
     font-style: none;
 }
+
+/*    exercice formulaire:     */
+
+      #gauche {
+        float: left;
+        width: 70%;
+        height: 1000px;
+        background-color: #EFECCA;
+      }
+      #droite {
+        background-color: #CEFFF8;
+        height: 1000px;
+        padding : 10px;
+        padding-left: 71%;
+      }
