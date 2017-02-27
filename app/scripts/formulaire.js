@@ -1,8 +1,3 @@
-//modification css
-
-
-
-
 
 // Variable de suppression d'ancien contenu
 
@@ -53,7 +48,7 @@ $('#droite').on('click', '#bouton2',function(){
     //variable stockant le texte de l'id
     var valeur_id = $(':input[name="label"]').val();
     
-    $('#gauche').append('<input id=' +'"'+ valeur_id + '"' + 'type="text">');
+    $('#gauche').append('<input id=' +'"'+ valeur_id + '"' + 'type="text">' + '<br>');
     //netoyage
     refresh();
 

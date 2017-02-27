@@ -146,15 +146,22 @@ ul li {
 
 /*    exercice formulaire:     */
 
-      #gauche {
-        float: left;
-        width: 70%;
-        height: 1000px;
-        background-color: #EFECCA;
-      }
-      #droite {
-        background-color: #CEFFF8;
-        height: 1000px;
-        padding : 10px;
-        padding-left: 71%;
-      }
+#gauche {
+    float: left;
+    width: 70%;
+    height: 1000px;
+    background-color: #EFECCA;
+}
+
+#droite {
+    background-color: #CEFFF8;
+    height: 1000px;
+    padding : 10px;
+    padding-left: 71%;
+}
+
+#droite span, #gauche button, #droite label, #gauche label, #gauche input, #droite button,#gauche button  {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
