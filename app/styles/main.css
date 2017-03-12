@@ -165,3 +165,7 @@ ul li {
     margin-top: 10px;
 }
 
+#lumiere {
+    width: 10px;
+    height: 10px; 
+    background-color: white; }

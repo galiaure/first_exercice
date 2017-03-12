@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="firstAppApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <a class="navbar-brand" href="#/">firstApp</a>
+          </div>
+
+          <div class="collapse">
+
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div ng-view="">
+         <span id="resultat5"></span>
+          <h1>Mini-jeu</h1>
+            <img src="images/Smile-icon.png" id="target">
+            <span id="rapport"></span>
+            <h2>Au scroll notre texte change de couleur </h2>
+            
+            <p>La valeur de la Constitution d'un État varie selon le régime en place, elle a généralement une valeur supérieure à la loi. Elle est à la fois l'acte politique et la loi fondamentale qui unit et régit de manière organisée et hiérarchisée l’ensemble des rapports entre gouvernants et gouvernés au sein de cet État, en tant qu'unité d'espace géographique et humain. La Constitution protège les droits et les libertés des citoyens contre les abus de pouvoir potentiels des titulaires des pouvoirs (exécutif, législatif, et judiciaire).</p>
+
+            <p>Si la fiction juridique veut que la Constitution fonde et encadre juridiquement l'État, il est entendu que l'histoire politique la précède et peut lui conférer à la fois sa légitimité circonstanciée et la permanence de son autorité. Cette histoire politique est alors réintroduite dans le droit en étant qualifiée de « pouvoir constituant primaire » (le pouvoir souverain qui établit une nouvelle Constitution).</p>
+
+            <p>Plusieurs pays honorent et maintiennent une conscience nationale par un jour de célébration officielle (Fête nationale, Fête fédérale, Jour de la Constitution ou « Constitution Day » en anglais).</p>
+
+            <p>Le terme « Constitution » est également utilisé pour désigner les règles fondamentales d'organisations autres que des États souverains : on peut ainsi parler de la Constitution de l'OIT, du projet de Constitution européenne ou de la Constitution civile du clergé3. Il serait toutefois plus correct, pour ces organisations, d'employer les termes de traité ou d'« acte fondateur ».</p>
+      
+        </div>
+    </div>  
+    
+     <div class="container">
+        <div ng-view=""> 
+            <h2>Action sur saisie du clavier</h2>
+            <div id="lumiere"></div>
+            <textarea id="target1"></textarea>
+            <form>
+              Laissez aller votre imagination : saisissez quelques mots<br />
+              <textarea id="saisie"></textarea>
+            </form>
+            <br />
+             Caractère saisi : <span id="unelettre"></span>
+       </div>
+    </div> 
+    
+    <div class="container">
+        <div ng-view=""> 
+            <h2>Utilisation des focus et blur</h2>
+            <form>
+              Cliquez sur les zones de texte<p>
+              <input type="text" class="f" id="Zone-de-texte-1"><p>
+               <input type="text" class="f" id="Zone-de-texte-2">
+               <br/>
+               
+              <fieldset id="premier">
+                <legend>Premier groupe</legend>
+                <input type="text" class="f" id="Zone-de-texte-1"><p>
+                <input type="text" class="f" id="Zone-de-texte-2">
+                <br/>
+              </fieldset>
+
+              <fieldset id="deuxieme">
+                <legend>Deuxième groupe</legend>
+                <input type="text" class="f" id="Zone-de-texte-3"><p>
+                <input type="text" class="f" id="Zone-de-texte-4">
+                <br/>
+              </fieldset>
+            </form>
+            <br/>
+              Focus : <span id="resultat"></span><br />
+              Perte de focus : <span id="resultat2"></span>
+          
+          </div>
+    </div> 
+    
+     <div class="container">
+        <div ng-view=""> 
+        <h2>Dimension de la fenêtre grace au resize</h2>
+        <span id="resultat3"></span>
+
+        </div>
+    </div> 
+    
+    <div class="container">
+        <div ng-view=""> 
+        <h2>Dimension de la fenêtre grace au resize</h2>
+        
+        <form>Sélectionnez une valeur dans la liste déroulante
+          <select>
+            <option>J'aime jQuery</option>
+            <option>J'adore jQuery</option>
+            <option>Je raffole de jQuery</option>
+            <option>jQuery ? Jamais entendu parler !</option>
+          </select>
+        </form>
+        <br />
+        <span id="resultat4"></span>
+        <br />
+
+        </div>
+    </div> 
+    
+    <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/evenementielle.js"></script>
+        <!-- endbuild -->
+
+</body>
+</html>

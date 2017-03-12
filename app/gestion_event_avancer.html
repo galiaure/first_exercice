@@ -42,18 +42,12 @@
 
     <div class="container">
         <div ng-view="">
-            <h1>Entrainement JQuery</h1>
-            <ul>
-                <li><a href="exercice_jquery1.html">Exercice 1</a></li>
-                <li><a href="tp_questionnaire.html">Questionnaire interractif JQuery</a></li>
-                <li><a href="tp_generateur_form.html">Générateur de formulaire avec JQuery</a></li>
-                <li><a href="gestion_evenementielle.html">gestion évènementielle JQuery</a></li>
-                <li><a href="gestion_event_avancer.html">gestion évènementielle avancer JQuery</a></li>
-            </ul>
-            
-            
+         
+
         </div>
-    </div>   
+    </div>  
+    
+     
     
     <div class="footer">
       <div class="container">
@@ -75,7 +69,8 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -88,6 +83,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/evenementielle_avancer.js"></script>
         <!-- endbuild -->
 
 </body>
